@@ -1,0 +1,748 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云盘 - 让文件在云端安个家</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- Slick slide -->
+    <link rel="stylesheet" href="vendors/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css" type="text/css">
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="vendors/lightbox/magnific-popup.css" type="text/css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="vendors/datepicker/daterangepicker.css">
+
+    <!-- Vmap -->
+    <link rel="stylesheet" href="vendors/vmap/jqvmap.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::preloader-->
+<div class="preloader">
+    <div class="preloader-icon"></div>
+</div>
+<!-- end::preloader -->
+
+<!-- begin::header -->
+<div class="header">
+
+    <div>
+        <ul class="navbar-nav">
+
+            <!-- begin::navigation-toggler -->
+            <li class="nav-item navigation-toggler">
+                <a href="#" class="nav-link" title="Hide navigation">
+                    <i data-feather="arrow-left"></i>
+                </a>
+            </li>
+            <li class="nav-item navigation-toggler mobile-toggler">
+                <a href="#" class="nav-link" title="Show navigation">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+            <!-- end::navigation-toggler -->
+
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">上传</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">文件</a>
+                    <a href="#" class="dropdown-item">文件夹</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div>
+        <ul class="navbar-nav">
+
+            <!-- begin::header search -->
+            <li class="nav-item">
+                <a href="#" class="nav-link" title="搜索" data-toggle="dropdown">
+                    <i data-feather="search"></i>
+                </a>
+                <div class="dropdown-menu p-2 dropdown-menu-right">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                            <div class="input-group-prepend">
+                                <button class="btn" type="button">
+                                    <i data-feather="search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <!-- end::header search -->
+
+            <!-- begin::header minimize/maximize -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link" title="全屏" data-toggle="fullscreen">
+                    <i class="maximize" data-feather="maximize"></i>
+                    <i class="minimize" data-feather="minimize"></i>
+                </a>
+            </li>
+            <!-- end::header minimize/maximize -->
+
+        </ul>
+
+        <!-- begin::mobile header toggler -->
+        <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item header-toggler">
+                <a href="#" class="nav-link">
+                    <i data-feather="arrow-down"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- end::mobile header toggler -->
+    </div>
+
+</div>
+<!-- end::header -->
+
+<!-- begin::main -->
+<div id="main">
+
+    <!-- begin::navigation -->
+    <div class="navigation">
+
+        <div class="navigation-menu-tab">
+            <div>
+                <div class="navigation-menu-tab-header" data-toggle="tooltip" title="花木兰" data-placement="right">
+                    <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                        <figure class="avatar avatar-sm">
+                            <img src="assets/media/image/user/women_avatar1.jpg" class="rounded-circle" alt="avatar">
+                        </figure>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3 text-center" data-backround-image="assets/media/image/image1.jpg">
+                            <figure class="avatar mb-3">
+                                <img src="assets/media/image/user/women_avatar1.jpg" class="rounded-circle" alt="image">
+                            </figure>
+                            <h6 class="d-flex align-items-center justify-content-center">
+                                花木兰
+                                <a href="#" class="btn btn-primary btn-sm ml-2" data-toggle="tooltip" title="编辑个人资料">
+                                    <i data-feather="edit-2"></i>
+                                </a>
+                            </h6>
+                            <small>等级: <strong>珀金</strong></small>
+                        </div>
+                        <div class="dropdown-menu-body">
+                            <div class="border-bottom p-4">
+                                <h6 class="text-uppercase font-size-11 d-flex justify-content-between">
+                                    存储空间
+                                    <span>%25</span>
+                                </h6>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 35%;"
+                                         aria-valuenow="35"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item">个人中心</a>
+                                <a href="#" class="list-group-item d-flex">
+                                    收件箱 <span class="text-muted ml-auto">18</span>
+                                </a>
+                                <a href="#" class="list-group-item" data-sidebar-target="#settings">帮助中心</a>
+                                <a href="login.html" class="list-group-item text-danger" data-sidebar-target="#settings">登出!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow-1">
+                <ul>
+                    <li>
+                        <a  href="#" data-toggle="tooltip" data-placement="right" title="我的报表"
+                           data-nav-target="#dashboards">
+                            <i data-feather="bar-chart-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#" data-toggle="tooltip" data-placement="right" title="我的云盘" data-nav-target="#mycloud">
+                            <i data-feather="home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="我的分享"
+                           data-nav-target="#shares">
+                            <i data-feather="layers"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="回收站" data-nav-target="#trashes">
+                            <i data-feather="archive"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="设置" data-nav-target="#settings">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html" data-toggle="tooltip" data-placement="right" title="登出">
+                            <i data-feather="log-out"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- begin::navigation menu -->
+        <div class="navigation-menu-body">
+
+            <!-- begin::navigation-logo -->
+            <div>
+                <div id="navigation-logo">
+                    <a href="index.html">
+                        <img class="logo" src="assets/media/image/logo.png" alt="logo">
+                        <img class="logo-light" src="assets/media/image/logo-light.png" alt="light logo">
+                    </a>
+                </div>
+            </div>
+            <!-- end::navigation-logo -->
+
+            <div class="navigation-menu-group">
+
+                <div id="dashboards">
+                    <ul>
+                        <li class="navigation-divider">我的报表</li>                   
+                        <li><a class="active" href="dashboard-three.html">大屏展示</a></li>
+                        <li><a href="dashboard-four.html">分析</a></li>
+                    </ul>
+                    <div class="card-body">
+                        <h6 class="mb-4">存储状态</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+                                <i data-feather="database" class="width-30 height-30"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="progress" style="height: 10px">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                                         style="width: 40%" aria-valuenow="10" aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                                <div class="line-height-12 small text-muted mt-2">共2500GB，已使用200GB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="open"  id="mycloud">
+                    <ul>
+                        <li class="navigation-divider">我的云盘</li>
+                        <li>
+                            <a href="index.html">
+                                <span>所有文件</span>
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images-index.html">
+                                <span>图片</span>
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents-inbox.html">
+                                <span>文档</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="videos-index.html">
+                                <span>视频</span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="musics-index.html">
+                                <span>音乐</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="others-index.html">
+                                <span>其他</span>
+                            </a>
+                        </li>
+                    </ul>
+ 
+                </div>
+                <div id="shares">
+                    <ul>
+                        <li class="navigation-divider">我的分享</li>
+                        <li><a href="avatar.html">我的分享</a></li>
+                        <li><a href="icons.html">取消所有分享</a></li>
+                    </ul>
+                </div>
+                <div id="trashes">
+                    <ul>
+                        <li class="navigation-divider">回收站</li>
+                        <li><a href="login.html">我的回收站</a></li>
+                        <li><a href="register.html">清空</a></li>
+
+                    </ul>
+                </div>
+                <div id="settings">
+                    <ul>
+                        <li class="navigation-divider">设置</li>
+                        <li><a href="login.html">个人中心</a></li>
+                        <li><a href="login.html">全局设置</a></li>
+                        <li><a href="recover-password.html">重置密码</a></li>
+                       
+         
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end::navigation menu -->
+
+    </div>
+    <!-- end::navigation -->
+
+    <!-- begin::main-content -->
+    <div class="main-content">
+
+        <!-- begin::page-header -->
+        <div class="page-header">
+            <div class="container-fluid d-sm-flex justify-content-between">
+                <h4>所有图片</h4>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="images-index.html">列表<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="images-timeline.html">时光轴</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">我的云盘</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">所有图片</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end::page-header -->
+
+        <!-- begin::page content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">最近上传</h6>                                    
+                                        <div class="slider-for offset-3">
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo1.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo2.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo3.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo4.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo5.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo6.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo7.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo8.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo9.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo10.jpg" class="img-fluid" style="width:60%"
+                                                     alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="slider-nav">
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo1.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo2.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo3.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo4.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo5.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo6.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo7.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo8.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo9.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                            <div class="slick-slide-item">
+                                                <img src="assets/media/image/photo10.jpg" class="img-fluid" alt="image">
+                                            </div>
+                                        </div>
+  
+                                    </div>                                          
+                    </div>
+
+                    <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">所有图片</h6>  
+                                <div class="container-fluid d-sm-flex justify-content-between">
+                                    
+                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                    
+                                        <input type="checkbox" id="checkAll" name="checkAll" class="custom-control-input">
+                                        <label class="custom-control-label" for="checkAll">全选</label>
+                                    </div>
+                                    
+                                   
+
+                                    <div class="btn-group" role="group" aria-label="button group">
+                                        <button type="button" class="btn btn-primary">
+                                            <i class="fa fa-share"></i>&nbsp;分享
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fa fa-download"></i>&nbsp;下载
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fa fa-trash"></i>&nbsp;删除
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fa fa-edit"></i>&nbsp;重命名
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fa fa-file"></i>&nbsp;移动到
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fa fa-copy"></i>&nbsp;复制到
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div>&nbsp;</div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo4.jpg">
+                                            <img src="assets/media/image/photo4.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline1" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo5.jpg">
+                                            <img src="assets/media/image/photo5.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline2" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline2"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo6.jpg">
+                                            <img src="assets/media/image/photo6.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline3" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline3"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo7.jpg">
+                                            <img src="assets/media/image/photo7.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline4" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline4"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo8.jpg">
+                                            <img src="assets/media/image/photo8.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline5" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline5"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo9.jpg">
+                                            <img src="assets/media/image/photo9.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline6" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline6"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo4.jpg">
+                                            <img src="assets/media/image/photo4.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline7" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline7"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo5.jpg">
+                                            <img src="assets/media/image/photo5.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline8" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline8"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo6.jpg">
+                                            <img src="assets/media/image/photo6.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline9" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline9"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo7.jpg">
+                                            <img src="assets/media/image/photo7.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline10" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline10"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo8.jpg">
+                                            <img src="assets/media/image/photo8.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline11" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline11"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo9.jpg">
+                                            <img src="assets/media/image/photo9.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline12" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline12"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo4.jpg">
+                                            <img src="assets/media/image/photo4.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline13" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline13"></label>
+                                        </div> 
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo5.jpg">
+                                            <img src="assets/media/image/photo5.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline14" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline14"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo6.jpg">
+                                            <img src="assets/media/image/photo6.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline15" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline15"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo7.jpg">
+                                            <img src="assets/media/image/photo7.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline16" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline16"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo8.jpg">
+                                            <img src="assets/media/image/photo8.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline17" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline17"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                        <a class="image-popup-gallery-item" href="assets/media/image/photo9.jpg">
+                                            <img src="assets/media/image/photo9.jpg" class="img-fluid" alt="image">
+                                        </a>
+                                        <div class="custom-control custom-checkbox custom-control-inline" style="position:absolute;top:2px;left:20px;z-index:1000">
+                                            <input type="checkbox" id="customCheckBoxInline18" name="select-list" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheckBoxInline18"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                               <!-- 分页开始-->
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-end">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">上一页</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">下一页</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- 分页结束-->
+                            </div>
+
+                               
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!-- end::page content -->
+
+        <!-- begin::footer -->
+        <footer>
+            <div class="container-fluid">
+                <div>© 2021 cloud disk v1.0.0 Made for <a href="#">Demo</a></div>
+                <div>
+                    <nav class="nav">
+                        <a href="" class="nav-link">免责声明</a>
+                        <a href="#" class="nav-link">帮助中心</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!-- end::footer -->
+
+    </div>
+    <!-- end::main-content -->
+
+</div>
+<!-- end::main -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- Chartjs -->
+<script src="vendors/charts/chartjs/chart.min.js"></script>
+
+<!-- Apex chart -->
+<script src="vendors/charts/apex/apexcharts.min.js"></script>
+
+<!-- Circle progress -->
+<script src="vendors/circle-progress/circle-progress.min.js"></script>
+
+<!-- Peity -->
+<script src="vendors/charts/peity/jquery.peity.min.js"></script>
+<script src="assets/js/examples/charts/peity.js"></script>
+
+<!-- Datepicker -->
+<script src="vendors/datepicker/daterangepicker.js"></script>
+
+<!-- Slick -->
+<script src="vendors/slick/slick.min.js"></script>
+
+<!-- Vamp -->
+<script src="vendors/vmap/jquery.vmap.min.js"></script>
+<script src="vendors/vmap/maps/jquery.vmap.usa.js"></script>
+<script src="assets/js/examples/vmap.js"></script>
+
+<!-- Dashboard scripts -->
+<script src="assets/js/examples/dashboard.js"></script>
+<div class="colors"> <!-- To use theme colors with Javascript -->
+    <div class="bg-primary"></div>
+    <div class="bg-primary-bright"></div>
+    <div class="bg-secondary"></div>
+    <div class="bg-secondary-bright"></div>
+    <div class="bg-info"></div>
+    <div class="bg-info-bright"></div>
+    <div class="bg-success"></div>
+    <div class="bg-success-bright"></div>
+    <div class="bg-danger"></div>
+    <div class="bg-danger-bright"></div>
+    <div class="bg-warning"></div>
+    <div class="bg-warning-bright"></div>
+</div>
+
+<!-- App scripts -->
+<script src="assets/js/app.js"></script>
+<!-- Slick slide -->
+<script src="vendors/slick/slick.min.js"></script>
+<script src="assets/js/examples/slick.js"></script>
+
+<!-- Lightbox -->
+<script src="vendors/lightbox/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/examples/lightbox.js"></script>
+<script>
+    //全选、全不选
+     
+       $(document).ready(function(){        
+         $("#checkAll").click(function(){
+          $(":checkbox[name='select-list']").prop("checked",this.checked);
+         });
+       });
+ 
+ </script>
+
+</body>
+</html>
